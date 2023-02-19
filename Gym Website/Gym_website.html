@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypher gym corner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+    <style>
+        /* css reset */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("img/6999339.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 14px;
+            width: 129px;
+
+        }
+
+        .center {
+            /* border: 2px solid green; */
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        .right {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover {
+            color: #3e403f;
+            text-decoration: underline;
+        }
+
+        .left img {
+            width: 60px;
+            padding: 0px 30px;
+        }
+
+        .left img:hover {
+            filter: invert(100);
+        }
+
+        .left ul {
+            display: inline-block;
+        }
+
+        .left div {
+            text-align: center;
+            color: black;
+            line-height: 15px;
+            font-size: 20px;
+        }
+
+        .left div:hover {
+            filter: invert(100);
+        }
+
+        .btn {
+            border: 2px solid white;
+            color: white;
+            background-color: #929493;
+            border-radius: 10px;
+            padding: 8px 13px;
+            margin: 8px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #3e403f;
+
+        }
+
+        .container {
+            border: none;
+            margin: 78px 65px;
+            padding: 33px 49px;
+            border-radius: 20px;
+            width: 33%;
+            background-color: transparent;
+            color: white;
+            background-color: rgba(41, 39, 39, 0.3);
+            box-shadow: 0 5px 30px black;
+        }
+
+
+
+        .form-group input {
+            border: none;
+            border-bottom: 2px solid white;
+            margin: 4px 10px;
+            padding: 7px 58px;
+            width: 27%;
+            background-color: transparent;
+            color: white;
+        }
+
+        input:focus {
+            outline: none !important;
+            border-bottom: 2px solid rgb(91, 243, 131);
+            font-size: 17px;
+            font-weight: bold;
+            color: white;
+        }
+
+        ::placeholder {
+            color: white;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        #submit {
+            margin: 12px 23px;
+            padding: 13px 64px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="img/pngegg.png" alt="">
+            <div>Cypher Gym</div>
+
+        </div>
+        <div class="center">
+            <!-- center box for navbar -->
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">Call us</button>
+            <button class="btn">E-mail us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of all the IIT's!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your hostel no.">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your roll no.">
+            </div>
+        </form>
+        <button class="btn" id="submit">
+            Submit the form
+        </button>
+    </div>
+
+</body>
+
+</html>
